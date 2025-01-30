@@ -1,0 +1,39 @@
+/* Estilizando o container */
+.container {
+    display: flex;
+    /* Ativa o Flexbox */
+    justify-content: space-between;
+    /* Espaça as caixas igualmente */
+    margin: 20px;
+    /* Margem ao redor do container */
+}
+
+/* Estilizando as caixas */
+.box {
+    flex: 1;
+    /* Faz com que as caixas ocupem o mesmo espaço */
+    margin: 10px;
+    /* Margem entre as caixas */
+    padding: 20px;
+    /* Espaçamento interno */
+    color: white;
+    /* Cor do texto */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+/* Estilos específicos para cada caixa */
+.box1 {
+    background-color: #4A90E2;
+    /* Cor de fundo da Caixa 1 */
+}
+
+.box2 {
+    background-color: #E94E77;
+    /* Cor de fundo da Caixa 2 */
+}
+
+.box3 {
+    background-color: #50E3C2;
+    /* Cor de fundo da Caixa 3 */
+}
