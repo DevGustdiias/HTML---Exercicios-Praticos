@@ -1,0 +1,35 @@
+/* Estilizando a barra de navegação */
+.navbar {
+    background-color: #0e1114; /* Cor de fundo da navbar */
+    padding: 10px; /* Espaçamento interno */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding */
+    margin: 0; /* Remove a margem */
+    display: flex; /* Exibe os itens em linha */
+    justify-content: space-around; /* Espaça os itens igualmente */
+}
+
+.navbar li {
+    display: inline; /* Exibe os itens em linha */
+}
+
+.navbar a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 10px 15px; /* Espaçamento interno */
+}
+
+/* Media query para telas menores */
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column; /* Muda a direção para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .navbar li {
+        margin: 5px 0; /* Adiciona margem entre os itens */
+    }
+}
