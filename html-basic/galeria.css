@@ -1,0 +1,94 @@
+/* Estilizando o container da galeria */
+.galeria-container {
+    display: grid; /* Ativa o Grid Layout */
+
+    /* Opções para display:
+       block - exibe como um elemento de bloco
+       inline-block - exibe como um elemento inline, mas permite definir largura e altura
+       flex - ativa o Flexbox Layout
+       grid - ativa o Grid Layout */
+
+    grid-template-columns: repeat(auto-fill, minmax(800px, 1fr)); /*  Cria colunas responsivas */
+
+    /* Opções para grid-template-columns:
+       none - sem definição de colunas
+       auto - cria colunas automáticas
+       repeat(auto-fill, minmax(400px, 1fr)) - cria colunas responsivas que se ajustam ao tamanho do contêiner */
+
+    gap: 20px; /* Espaçamento entre os itens */
+
+    /* Opções para gap:
+       0 - sem espaçamento
+       10px, 20px, etc. - espaçamento fixo em pixels
+       1em, 2em, etc. - espaçamento relativo ao tamanho da fonte */
+
+    margin: 20px; /* Margem ao redor do container */
+
+     /* Opções para margin:
+       0 - sem margem
+       10px, 20px, etc. - margem fixa em pixels
+       auto - margem automática */
+}
+
+/* Estilizando os itens da galeria */
+.galeria-item {
+    overflow: hidden; /* Esconde partes da imagem que saem do contêiner */
+
+     /* Opções para overflow:
+       visible - conteúdo transborda do contêiner
+       hidden - conteúdo que transborda é escondido
+       scroll - adiciona barras de rolagem para o conteúdo que transborda
+       auto - adiciona barras de rolagem apenas quando necessário */
+
+    border-radius: 20px; /* Bordas arredondadas */
+
+      /* Opções para border-radius:
+       0 - bordas retas
+       50% - bordas completamente arredondadas (círculo, se a altura e largura forem iguais)
+       10px, 20px, etc. - bordas arredondadas com o raio especificado */
+}
+
+   
+
+/* Estilizando as imagens */
+.galeria-item img {
+    width: 100%; /* Faz a imagem ocupar 100% do contêiner */
+
+    /* Opções para width:
+       auto - largura automática baseada no conteúdo
+       50%, 75%, etc. - largura em porcentagem do contêiner pai
+       100px, 200px, etc. - largura fixa em pixels */
+
+    height: auto; /* Mantém a proporção da imagem */
+
+    /* Opções para height:
+       auto - altura automática baseada na largura e proporção da imagem
+       100px, 200px, etc. - altura fixa em pixels */
+
+    display: block; /* Remove o espaço em branco abaixo da imagem */
+
+      /* Opções para display:
+       inline - exibe como um elemento inline
+       block - exibe como um elemento de bloco
+       inline-block - exibe como um elemento inline, mas permite definir largura e altura
+       none - oculta o elemento */
+
+    transition: transform 0.3s; /* Transição suave para o efeito de hover */
+
+    /* Opções para transition:
+       none - sem transição
+       all 0.3s - aplica a transição a todas as propriedades com duração de 0.3 segundos
+       transform 0.3s - aplica a transição apenas à propriedade transform com duração de 0.3 segundos */
+}
+
+/* Efeito de hover nas imagens */
+.galeria-item:hover img {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+
+    /* Opções para transform:
+       none - sem transformação
+       scale(1.05) - aumenta a escala da imagem em 5%
+       rotate(45deg) - rotaciona a imagem em 45 graus
+       translateX(10px) - move a imagem 10 pixels para a direita
+       translateY(10px) - move a imagem 10 pixels para baixo */
+}

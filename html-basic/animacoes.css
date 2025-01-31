@@ -1,0 +1,29 @@
+/* Estilizando o título com animação de fade-in */
+.fade-in {
+    opacity: 0; /* Começa invisível */
+    animation: fadeIn 2s forwards; /* Aplica a animação */
+}
+
+/* Definindo a animação de fade-in */
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Torna o elemento visível */
+    }
+}
+
+/* Estilizando o botão */
+.animated-button {
+    background-color: #4A90E2; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    padding: 15px 30px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+/* Efeito de hover no botão */
+.animated-button:hover {
+    background-color: #E94E77; /* Muda a cor de fundo ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do botão */
+}
